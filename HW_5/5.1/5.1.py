@@ -23,7 +23,7 @@ def is_valid_variable(name):
             return False
 
     # 5. No more than one _
-    if name.count("_") > 1:
+    if "__" in name:
         return False
 
     return True
